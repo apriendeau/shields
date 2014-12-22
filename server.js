@@ -1,3 +1,4 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = 0;
 var serverPort = +process.env.PORT || +process.argv[2] || 80;
 var infoSite = process.env.INFOSITE || "http://shields.io";
 var camp = require('camp').start({
