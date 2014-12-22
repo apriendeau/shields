@@ -293,7 +293,7 @@ cache(function(data, match, sendBadge, request) {
     try {
       badgeData.text[1] = res;
       if (res === 'passing') {
-        badgeData.colorscheme = 'brightgreen';
+        badgeData.colorscheme = 'blue';
       } else if (res === 'failing') {
         badgeData.colorscheme = 'red';
       } else {
