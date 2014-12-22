@@ -293,7 +293,7 @@ cache(function(data, match, sendBadge, request) {
     try {
       badgeData.text[1] = res;
       if (res === 'passing') {
-        badgeData.colorscheme = 'blue';
+        badgeData.colorscheme = 'brightgreen';
       } else if (res === 'failing') {
         badgeData.colorscheme = 'red';
       } else {
@@ -2148,10 +2148,10 @@ cache(function(data, match, sendBadge, request) {
 
     try {
       if (json.color === 'blue') {
-        badgeData.colorscheme = 'brightgreen';
+        badgeData.colorscheme = 'blue';
         badgeData.text[1] = 'passing';
       } else if (json.color === 'red') {
-        badgeData.colorscheme = 'red';
+        badgeData.colorscheme = 'pink';
         badgeData.text[1] = 'failing';
       } else if (json.color === 'yellow') {
         badgeData.colorscheme = 'yellow';
