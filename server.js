@@ -2135,7 +2135,11 @@ cache(function(data, match, sendBadge, request) {
   var format = match[6];
   var options = {
     json: true,
-    uri: scheme + '://' + host + '/job/' + job + '/api/json?tree=color'
+    uri: scheme + '://' + host + '/job/' + job + '/api/json?tree=color',
+    auth: {
+      user: serverSecrets.jenkins.user,
+      password: serverSecrets.jenkins.pass
+    }
   };
 
   var badgeData = getBadgeData('build', data);
